@@ -7,13 +7,12 @@ var app = http.createServer(function(request,response){
     var queryData = url.parse(_url, true).query;
     var title = queryData.id;
     if(_url == '/'){
-      title = "Welcome";
+      title = 'Welcome';
     }
     if(_url == '/favicon.ico'){
-      response.writeHead(404);
-      response.end();
-      return;
-      
+        response.writeHead(404);
+        response.end();
+        return;
     }
     response.writeHead(200);
     var template = `
@@ -38,7 +37,7 @@ var app = http.createServer(function(request,response){
 </body>
 </html>
     `;
-    response.end(queryData.id);
+    response.end(template);
  
 });
 app.listen(3000);
