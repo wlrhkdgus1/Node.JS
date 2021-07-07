@@ -1,0 +1,30 @@
+{
+web browser가 설치되어 있는 컴퓨터가 클라이언트
+
+사용자가 그 web browser에 a.com 이라고 입력시 클라이언트가 서버에게 요청을하게되고
+
+a.com 이라는 서버는 클라이언트에게 응답한다. server
+
+a.com = 도메인 네임 사람이 쉽게 기억할수있게 만들어놓은 이름
+
+원래는 저 도메인과 일치하는 ip주소(address) 로 접속하게된다.
+}
+http를 통해서 접속하는 경우에는 80번 port를 쓰자 라고 약속되어있어서 생략되어있음
+
+node js 장점은 서버쪽에위치하면서 빠르고 편리하게 서버로들어오는 요청을 응답하는 app을
+만들수있는 기반 시스템을 제공한다.
+
+npm
+uglifyjs pretty.js = pretty.js 안에 들어있는 코드를 압축시켜줌 
+uglifyjs pretty.js -o uglified.js -m = pretty.js 파일의 내용을 uglified.js 라는 파일로 압축시켜 다시만듬.
+uglifyjs pretty.js -o pretty.min.js -m pretty.min.js 로 압축시키고 min 은 미니라고해서 용량이더작다 표시
+
+npm init 사용방법 https://www.inflearn.com/course/nodejs-%EA%B0%95%EC%A2%8C-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9/lecture/3513?tab=curriculum
+4분50초부터 
+
+얘는이프로잭트에 반드시필요하면 npm install **할때 뒤에 --save 붙혀야댐
+--save 의존성을 명시적으로 표시하는 뜻.
+--save 하기전 프로잭트 초기화를 시켜야되는데 그때하는것은 npm init 
+
+underscore 는 기본적으로 javascript가 제공하는 arrays 배열의 기능이 빈약하기때문에 
+underscore가 채워줌
